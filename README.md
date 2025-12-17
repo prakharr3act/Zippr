@@ -1,2 +1,1 @@
-# PasswordGenerator
-This random password generator is a simple, client-side web tool designed to generate strong, unique, and random passwords for enhanced online security.
+This project is a simple, secure, client-side web application built with HTML, CSS, and JavaScript. It generates strong, random, and unique passwords to promote better online security practices and prevent insecure passwords from being used.
