@@ -1,81 +1,172 @@
-body{
-  background-color:#141d26;
+body {
+  background-color: #141d26;
+  margin: 0;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 50px; 
 }
 
-.text-container{
+.social-links {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.developer-name {
+  font-family: 'Montserrat', sans-serif;
+  color: #b0b0b0; 
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-right: 10px;
+  align-self: center; 
+}
+
+.social-links .developer-name:hover {
+  color: #11ed65;
+}
+
+.social-links a {
+  color: #b0b0b0;
+  font-size: 30px; 
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #37cf71;
+  transform: translateY(-3px);
+}
+
+.text-container {
   display: flex;
   flex-direction: column;
   align-items: start;
-   margin-left: 50px;
+  margin-left: 50px;
+  max-width: 900px;
 }
 
-.text-container h1{
-  font-size: 60px;
+.text-container h1 {
+  font-size: clamp(35px, 8vw, 60px); 
   font-family: Montserrat;
   color: white;
-  margin-top: 100px;
+  margin-top: 120px;
   margin-bottom: 0px;
 }
 
-.text-container h2{
-  font-size: 60px;
+.text-container h2 {
+  font-size: clamp(35px, 8vw, 60px);
   font-family: Montserrat;
-  color:  #37cf71;
+  color: #37cf71;
   margin-top: 1px;
   margin-bottom: 0;
 }
 
-
-p{
-   font-family: Montserrat;
-   font-size: 25px;
-   color: #b0b0b0;
-   text-transform: capitalize;
-   margin-top: 10px;
+p {
+  font-family: Montserrat;
+  font-size: clamp(18px, 4vw, 25px);
+  color: #b0b0b0;
+  text-transform: capitalize;
+  margin-top: 10px;
 }
 
-button{
-background-color:  #37cf71;
-color: white;
-font-family:Montserrat;
-font-size: 20px;
-padding:10px 15px 10px 15px;
-border: none;
-border-radius: 5px;
-font-weight: 500;
-margin-top: 40px;
+button {
+  background-color: #37cf71;
+  color: white;
+  font-family: Montserrat;
+  font-size: 20px;
+  padding: 12px 25px; 
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-button:active{
-  scale:1.03;
+button:hover {
+  background-color: #2eb863;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: scale(0.98);
 }
 
 
-.password-container{
+.password-container {
   border-top: 1px solid #283745;
   border-bottom: 1px solid #283745;
-  height: 120px;
+  min-height: 120px;
   margin-top: 40px;
   visibility: hidden;
   margin-left: 35px;
-  width: 600px;
+  width: calc(100% - 70px);
+  max-width: 600px; 
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px 0;
 }
 
-.password-container h3{
-  font-size: 20px;
-  color:  #11ed65 ;
-  background-color:#283745 ;
+.password-container h3 {
+  font-size: 18px;
+  color: #11ed65;
+  background-color: #283745;
   border-radius: 6px;
   box-sizing: border-box;
   height: 50px;
-  width: 240px;
+  width: 260px;
   text-align: center;
   display: flex;
   align-items: center;
   font-family: Montserrat;
   justify-content: center;
-  font-weight:400;
+  font-weight: 400;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .social-links {
+    position: relative;
+    top: 20px;
+    right: 0;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+
+  .text-container {
+    margin-left: 20px;
+    align-items: center; 
+    text-align: center;
+  }
+
+  .password-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: auto;
+  }
+
+  .password-container h3 {
+    width: 100%; 
+    max-width: 300px;
+  }
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+  display: none !important;
+}
+
+html, body {
+  -ms-overflow-style: none !important;  
+  scrollbar-width: none !important; 
+  overflow-y: scroll; 
+  overflow-x: hidden; 
 }
