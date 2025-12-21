@@ -7,27 +7,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-  <title>Password Generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Random Password Generator</title>
 </head>
 <body>
 
-  <div class="text-container">
+  <div class="social-links">
+    <span class="developer-name">Developed by Prakhar Patel</span> 
+    <a href="https://github.com/Prakharcodes433" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.instagram.com/prakharr._patel/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.reddit.com/user/PrakharPatel669/" target="_blank"><i class="fa-brands fa-reddit-alien"></i></a>
+  </div>
 
+  <div class="text-container">
     <h1>Generate a</h1>
     <h2>random password</h2>
     <p>never use an insecure password .</p>
     <button onclick="getPassword()">Generate Passwords</button>
-
   </div>
 
-    <div class="password-container">
+  <div class="password-container">
+    <h3 id="pass-field-1"></h3>
+    <h3 id="pass-field-2"></h3>
+  </div>
 
-      
-      <h3 id="pass-field-1"></h3>
-      <h3 id="pass-field-2"></h3>
-
-    </div>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
