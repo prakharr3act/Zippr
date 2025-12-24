@@ -11,11 +11,11 @@ body {
 }
 
 .social-links #ig:hover{
-  color: #C13584;
+  color: #ff249f;
 }
 
 .social-links #reddit:hover{
-  color:#FF4500;
+  color: #ff6f00;
 }
 
 .social-links a:hover {
@@ -181,4 +181,5 @@ html, body {
   overflow: hidden; 
   height: 100%;    
 }
+
 
