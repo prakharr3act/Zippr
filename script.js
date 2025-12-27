@@ -38,6 +38,10 @@ function getPassword () {
 }
 
 
+function copyPassword(id) {
+  const textToCopy = document.getElementById(id).innerText;
+  
+
   if (textToCopy) {
     navigator.clipboard.writeText(textToCopy).then(() => {
       showToast();
@@ -53,5 +57,6 @@ function showToast() {
     toast.className = toast.className.replace("show", "");
   }, 3000);
 }
+
 
 
