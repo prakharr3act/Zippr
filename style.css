@@ -7,7 +7,7 @@ body {
   user-select:none;
 }
 
-.social-links #github:hover{
+.social-links #github{
   color: #FFFFFF;
 }
 
@@ -225,6 +225,7 @@ html, body {
   from {bottom: 30px; opacity: 1;}
   to {bottom: 0; opacity: 0;}
 }
+
 
 
 
