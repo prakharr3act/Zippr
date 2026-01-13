@@ -27,7 +27,7 @@ A sleek, dark-themed random password generator built with a focus on security an
 * [Instagram](https://instagram.com/prakharr._patel)
 * [Reddit](https://reddit.com/user/prakharpatel669)
 
-# Appearance of Zippr on Desktop
+# Appearance of Zippr 
 
 &nbsp;
 &nbsp;
