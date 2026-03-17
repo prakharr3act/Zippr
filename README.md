@@ -21,16 +21,5 @@ A sleek, dark-themed random password generator built with a focus on security, h
 
 ---
 
-## Theme Palette
-| Element | Color |
-| :--- | :--- |
-| Background | `#181C1F` |
-| Primary Accent | `#00b96b` |
-| Secondary Accent | `#00ea88` |
-| Card Surface | `#23272A` |
 
----
-
-##  Developer
-**Prakhar Patel**
 
